@@ -1,0 +1,9 @@
+{
+	"files.exclude": {
+		"E:/UnrealEngine/UE_Projects/MyProjectTest/.vs": true,
+		"E:/UnrealEngine/UE_Projects/MyProjectTest/.vscode": true,
+		"E:/UnrealEngine/UE_Projects/MyProjectTest/Content": true,
+		"E:/UnrealEngine/UE_Projects/MyProjectTest/Intermediate": true,
+		"E:/UnrealEngine/UE_Projects/MyProjectTest/Saved": true
+	}
+}

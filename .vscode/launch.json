@@ -1,0 +1,128 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "MyProjectTest (Debug)",
+			"request": "launch",
+			"preLaunchTask": "MyProjectTest Win64 Debug Build",
+			"program": "E:\\UnrealEngine\\UE_Projects\\MyProjectTest\\Binaries\\Win64\\UE4-Win64-Debug.exe",
+			"args": [
+			],
+			"cwd": "E:\\UnrealEngine\\UE_4.24",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "E:\\UnrealEngine\\UE_4.24\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "MyProjectTest (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "MyProjectTest Win64 DebugGame Build",
+			"program": "E:\\UnrealEngine\\UE_Projects\\MyProjectTest\\Binaries\\Win64\\UE4-Win64-DebugGame.exe",
+			"args": [
+			],
+			"cwd": "E:\\UnrealEngine\\UE_4.24",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "E:\\UnrealEngine\\UE_4.24\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "MyProjectTest (Development)",
+			"request": "launch",
+			"preLaunchTask": "MyProjectTest Win64 Development Build",
+			"program": "E:\\UnrealEngine\\UE_Projects\\MyProjectTest\\Binaries\\Win64\\UE4.exe",
+			"args": [
+			],
+			"cwd": "E:\\UnrealEngine\\UE_4.24",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "E:\\UnrealEngine\\UE_4.24\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "MyProjectTest (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "MyProjectTest Win64 Shipping Build",
+			"program": "E:\\UnrealEngine\\UE_Projects\\MyProjectTest\\Binaries\\Win64\\UE4-Win64-Shipping.exe",
+			"args": [
+			],
+			"cwd": "E:\\UnrealEngine\\UE_4.24",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "E:\\UnrealEngine\\UE_4.24\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "MyProjectTest (Test)",
+			"request": "launch",
+			"preLaunchTask": "MyProjectTest Win64 Test Build",
+			"program": "E:\\UnrealEngine\\UE_Projects\\MyProjectTest\\Binaries\\Win64\\UE4-Win64-Test.exe",
+			"args": [
+			],
+			"cwd": "E:\\UnrealEngine\\UE_4.24",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "E:\\UnrealEngine\\UE_4.24\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "MyProjectTestEditor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "MyProjectTestEditor Win64 Debug Build",
+			"program": "E:\\UnrealEngine\\UE_4.24\\Engine\\Binaries\\Win64\\UE4Editor-Win64-Debug.exe",
+			"args": [
+				"E:\\UnrealEngine\\UE_Projects\\MyProjectTest\\MyProjectTest.uproject"
+			],
+			"cwd": "E:\\UnrealEngine\\UE_4.24",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "E:\\UnrealEngine\\UE_4.24\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "MyProjectTestEditor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "MyProjectTestEditor Win64 DebugGame Build",
+			"program": "E:\\UnrealEngine\\UE_4.24\\Engine\\Binaries\\Win64\\UE4Editor-Win64-DebugGame.exe",
+			"args": [
+				"E:\\UnrealEngine\\UE_Projects\\MyProjectTest\\MyProjectTest.uproject"
+			],
+			"cwd": "E:\\UnrealEngine\\UE_4.24",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "E:\\UnrealEngine\\UE_4.24\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "MyProjectTestEditor (Development)",
+			"request": "launch",
+			"preLaunchTask": "MyProjectTestEditor Win64 Development Build",
+			"program": "E:\\UnrealEngine\\UE_4.24\\Engine\\Binaries\\Win64\\UE4Editor.exe",
+			"args": [
+				"E:\\UnrealEngine\\UE_Projects\\MyProjectTest\\MyProjectTest.uproject"
+			],
+			"cwd": "E:\\UnrealEngine\\UE_4.24",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "E:\\UnrealEngine\\UE_4.24\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "clr",
+			"request": "launch",
+			"program": "E:\\UnrealEngine\\UE_4.24\\Engine\\Binaries\\DotNET\\UnrealBuildTool.exe",
+			"console": "externalTerminal",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=\"E:\\UnrealEngine\\UE_Projects\\MyProjectTest\\MyProjectTest.uproject\"",
+				"-game",
+				"-engine"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"cwd": "E:\\UnrealEngine\\UE_4.24"
+		}
+	]
+}
