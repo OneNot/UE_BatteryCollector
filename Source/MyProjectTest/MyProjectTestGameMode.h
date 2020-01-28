@@ -13,6 +13,11 @@ class AMyProjectTestGameMode : public AGameModeBase
 
 public:
 	AMyProjectTestGameMode();
+	virtual void Tick(float DeltaTime) override;
+
+protected:
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Power")
+	float PowerDecayRate; 
 };
 
 
