@@ -28,6 +28,9 @@ public:
 	UFUNCTION(BlueprintPure, Category = "Spawning")
 	FVector GetRandomPointInVolume();
 
+	UFUNCTION(BlueprintCallable, Category = "Spawning")
+	void SetSpawningActive(bool ShouldSpawn);
+
 protected:
 	UPROPERTY(EditAnywhere, Category = "Spawning")
 	TSubclassOf<class APickup> WhatToSpawn;

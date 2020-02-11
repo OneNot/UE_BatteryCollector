@@ -43,6 +43,19 @@ FVector ASpawnVolume::GetRandomPointInVolume()
 	return UKismetMathLibrary::RandomPointInBoundingBox(SpawnOrigin, SpawnExtent);
 }
 
+void ASpawnVolume::SetSpawningActive(bool ShouldSpawn)
+{
+	if (ShouldSpawn)
+	{
+		SpawnDelay = FMath::FRandRange(MinSpawnDelay, MaxSpawnDelay);
+		GetWorldTimerManager().SetTimer(SpawnTimer, this, &ASpawnVolume::SpawnPickup, SpawnDelay, false);
+	}
+	else
+	{
+		GetWorldTimerManager().ClearTimer(SpawnTimer);
+	}
+}
+
 void ASpawnVolume::SpawnPickup()
 {
 	if (WhatToSpawn != NULL)

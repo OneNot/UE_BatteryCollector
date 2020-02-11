@@ -112,7 +112,7 @@ void AMyProjectTestCharacter::CollectPickups()
 		}
 	}
 
-	if (collectedPower > 0)
+	if (collectedPower != 0)
 		UpdatePower(collectedPower);
 }
 
