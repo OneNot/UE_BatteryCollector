@@ -68,6 +68,9 @@ protected:
 	// End of APawn interface
 
 	UFUNCTION(BlueprintCallable, Category = "Pickups")
+	void TargetPickups();
+
+	UFUNCTION(BlueprintCallable, Category = "Pickups")
 	void CollectPickups();
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Power", Meta = (BlueprintProtected = "true"))
@@ -104,5 +107,8 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Power")
 	void UpdatePower(float powerChange);
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Power")
+	TArray<AActor*> TargetedActors;
 };
 

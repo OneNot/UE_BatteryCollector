@@ -92,16 +92,18 @@ void AMyProjectTestCharacter::SetupPlayerInputComponent(class UInputComponent* P
 	PlayerInputComponent->BindAction("ResetVR", IE_Pressed, this, &AMyProjectTestCharacter::OnResetVR);
 }
 
+void AMyProjectTestCharacter::TargetPickups()
+{
+	CollectionSphere->GetOverlappingActors(TargetedActors, ABatteryPickup::StaticClass());
+}
+
 void AMyProjectTestCharacter::CollectPickups()
 {
-	TArray<AActor*> CollectedActors;
-	CollectionSphere->GetOverlappingActors(CollectedActors);
-
 	float collectedPower = 0.0f;
 
-	for (int i = 0; i < CollectedActors.Num(); i++)
+	for (int i = 0; i < TargetedActors.Num(); i++)
 	{
-		APickup* const TestPickup = Cast<APickup>(CollectedActors[i]);
+		APickup* const TestPickup = Cast<APickup>(TargetedActors[i]);
 		if (TestPickup && !TestPickup->IsPendingKill() && TestPickup->IsActive())
 		{
 			ABatteryPickup* const currentBattery = Cast<ABatteryPickup>(TestPickup);
